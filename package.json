@@ -9,11 +9,11 @@
         "test": "ng test",
         "coverage": "ng test --no-watch --code-coverage",
         "lint": "ng lint",
-        "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\""
+        "prettier": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\""
     },
     "lint-staged": {
         "src/**/*.{ts,css,html}": [
-            "npm run prettier:check"
+            "npm run prettier"
         ]
     },
     "husky": {
