@@ -1,6 +1,28 @@
 {
-  "tabWidth": 4,
+  "semi": false,
   "singleQuote": true,
+  "trailingComma": "all",
   "printWidth": 120,
-  "bracketSpacing": true
+  "tabWidth": 2,
+  "useTabs": false,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": [
+        "*.html"
+      ],
+      "options": {
+        "parser": "angular"
+      }
+    },
+    {
+      "files": [
+        "*.ts"
+      ],
+      "options": {
+        "parser": "typescript"
+      }
+    }
+  ]
 }
