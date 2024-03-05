@@ -5,7 +5,11 @@
   "projects": {
     "template-angular-17-by-ponynguyen": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
