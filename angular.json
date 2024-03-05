@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-starter": {
+    "template-angular-17-by-ponynguyen": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-starter",
+            "outputPath": "dist/template-angular-17-by-ponynguyen",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -56,10 +56,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-starter:build:production"
+              "buildTarget": "template-angular-17-by-ponynguyen:build:production"
             },
             "development": {
-              "buildTarget": "angular-starter:build:development"
+              "buildTarget": "template-angular-17-by-ponynguyen:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -67,7 +67,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-starter:build"
+            "buildTarget": "template-angular-17-by-ponynguyen:build"
           }
         },
         "test": {
