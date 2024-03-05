@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { LandingPageV2Component } from './common/components/landing-page-v2/landing-page-v2.component';
 import { LandingPageComponent } from './common/components/landing-page/landing-page.component';
 import { NotFoundComponent } from './common/components/not-found/not-found.component';
 
@@ -11,6 +12,10 @@ export const routes: Routes = [
   {
     path: '',
     component: LandingPageComponent,
+  },
+  {
+    path: 'v2',
+    component: LandingPageV2Component,
   },
   {
     path: 'auth',
