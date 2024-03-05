@@ -7,10 +7,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'angular-routing';
-  footerUrl = 'https://www.ganatan.com';
-  footerLink = 'www.ganatan.com';
+  title = 'template-angular-17-by-ponynguyen';
 }

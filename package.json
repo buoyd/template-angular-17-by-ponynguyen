@@ -1,5 +1,5 @@
 {
-  "name": "angular-starter",
+  "name": "template-angular-17-by-ponynguyen",
   "version": "17.0.7",
   "scripts": {
     "ng": "ng",
@@ -8,8 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "coverage": "ng test --no-watch --code-coverage",
-    "lint": "ng lint",
-    "serve": "node server.js"
+    "lint": "ng lint"
   },
   "private": true,
   "dependencies": {
