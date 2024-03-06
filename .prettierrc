@@ -1,5 +1,5 @@
 {
-  "semi": false,
+  "semi": true,
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 120,
@@ -9,17 +9,13 @@
   "arrowParens": "always",
   "overrides": [
     {
-      "files": [
-        "*.html"
-      ],
+      "files": ["*.html"],
       "options": {
         "parser": "angular"
       }
     },
     {
-      "files": [
-        "*.ts"
-      ],
+      "files": ["*.ts"],
       "options": {
         "parser": "typescript"
       }

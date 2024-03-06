@@ -1,12 +1,12 @@
-import { Injectable } from '@angular/core'
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
-  token: string | null = 'null'
+  token: string | null = null;
   constructor() {}
   public isAuthenticated(): boolean {
-    return this.token != null
+    return this.token != null;
   }
 }

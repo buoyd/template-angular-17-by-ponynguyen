@@ -1,7 +1,7 @@
-import { Component, inject } from '@angular/core'
-import { CommonModule } from '@angular/common'
-import { RouterLink, RouterOutlet } from '@angular/router'
-import { HttpClient } from '@angular/common/http'
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +10,11 @@ import { HttpClient } from '@angular/common/http'
   template: `<router-outlet />`,
 })
 export class AppComponent {
-  http = inject(HttpClient)
+  http = inject(HttpClient);
 
   constructor() {
     this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((res) => {
-      console.log(res)
-    })
+      console.log(res);
+    });
   }
 }
