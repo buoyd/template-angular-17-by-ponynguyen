@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AuthService {
-  token: string | null = null;
+  token: string | null = 'ponynguyen';
   constructor() {}
   public isAuthenticated(): boolean {
     return this.token != null;
