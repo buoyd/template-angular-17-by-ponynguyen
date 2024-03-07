@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { AuthService } from '../../../common/services/auth.service';
 
 @Component({
   selector: 'app-sign-in',
   standalone: true,
   imports: [RouterLink],
   templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.scss',
 })
-export class SignInComponent {}
+export class SignInComponent {
+  authService = inject(AuthService);
+
+  constructor(public router: Router) {}
+
+  signIn() {
+    this.authService.signIn();
+    this.router.navigate(['/dashboard']);
+  }
+}

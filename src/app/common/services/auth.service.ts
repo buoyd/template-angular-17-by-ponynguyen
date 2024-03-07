@@ -4,9 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class AuthService {
-  token: string | null = 'ponynguyen';
-  constructor() {}
+  token: string | null = null;
+
+  constructor() {
+    this.token = localStorage.getItem('token');
+  }
+
   public isAuthenticated(): boolean {
     return this.token != null;
+  }
+
+  public signIn() {
+    localStorage.setItem('token', 'ponynguyen');
   }
 }
