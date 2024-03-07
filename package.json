@@ -9,7 +9,7 @@
     "test": "ng test",
     "coverage": "ng test --no-watch --code-coverage",
     "lint": "ng lint",
-    "format-code": "prettier --write \"src/{app,environments,assets}/**/*{.ts,.js,.json,.css,.scss,.html}\""
+    "format-code": "prettier --config .prettierrc --write ."
   },
   "private": true,
   "dependencies": {
