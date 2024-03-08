@@ -11,10 +11,7 @@ import { AuthService } from '../../../common/services/auth.service';
 export class SignInComponent {
   authService = inject(AuthService);
 
-  constructor(public router: Router) {}
-
-  signIn() {
-    this.authService.signIn();
-    this.router.navigate(['/dashboard']);
+  constructor() {
+    this.authService.redirectToDashboard();
   }
 }
