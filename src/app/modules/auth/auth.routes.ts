@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 export const AUTH_ROUTES: Route[] = [
   {

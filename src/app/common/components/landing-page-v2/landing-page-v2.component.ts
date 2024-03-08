@@ -94,8 +94,8 @@ import { RouterLink } from '@angular/router';
 
       <div class="container mx-auto px-6 py-16 pt-40 text-center">
         <div class="mx-auto max-w-lg">
-          <h1 class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl">
-            Building Your Next App with our Awesome components
+          <h1 role="button" class="text-3xl font-bold text-gray-800 dark:text-white lg:text-4xl" [routerLink]="['/']">
+            Click here! to Landing Page V1
           </h1>
           <p class="mt-6 text-gray-500 dark:text-gray-300">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero similique obcaecati illum mollitia.

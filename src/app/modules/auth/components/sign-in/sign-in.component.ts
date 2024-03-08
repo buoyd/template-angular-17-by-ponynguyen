@@ -1,14 +1,14 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { AuthService } from '../../../common/services/auth.service';
+import { AuthService } from '../../../../common/services/auth.service';
 
 @Component({
-  selector: 'app-sign-up',
+  selector: 'app-sign-in',
   standalone: true,
   imports: [RouterLink],
-  templateUrl: './sign-up.component.html',
+  templateUrl: './sign-in.component.html',
 })
-export class SignUpComponent {
+export class SignInComponent {
   authService = inject(AuthService);
 
   constructor() {

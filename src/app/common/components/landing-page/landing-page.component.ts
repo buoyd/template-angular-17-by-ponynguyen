@@ -87,8 +87,8 @@ import { RouterLink } from '@angular/router';
 
       <div class="container mx-auto px-6 py-16 pt-28 text-center">
         <div class="mx-auto max-w-lg">
-          <h1 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">
-            Create beautiful website layout with Meraki UI.
+          <h1 role="button" class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl" [routerLink]="['/v2']">
+            Click here! to Landing Page V2
           </h1>
 
           <p class="mt-6 text-gray-500 dark:text-gray-300">

@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { AuthService } from '../../../common/services/auth.service';
+import { AuthService } from '../../../../common/services/auth.service';
 
 @Component({
   selector: 'app-forgot-password',

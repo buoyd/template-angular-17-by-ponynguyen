@@ -1,3 +1,10 @@
-<div [routerLink]="['home']">Dashboard is work!</div>
-
-<router-outlet />
+<body class="flex bg-white dark:bg-gray-900 min-h-screen">
+  <app-navbar></app-navbar>
+  <div class="flex-grow text-gray-800">
+    <app-header></app-header>
+    <main class="p-6 sm:p-10 space-y-6 h-main-dashboard border-t border-slate-300 dark:border-gray-700">
+      <router-outlet />
+    </main>
+    <app-footer></app-footer>
+  </div>
+</body>

@@ -18,14 +18,14 @@ export class AuthService {
 
   redirectToDashboard() {
     this.token = localStorage.getItem('token');
-    this.token && this.redirectTo.navigate(['/dashboard']);
+    this.token && this.redirectTo.navigate(['/dashboard/home']);
   }
 
   login() {
     this.loading.show();
     this.token = 'ponynguyen';
     localStorage.setItem('token', this.token);
-    this.redirectTo.navigate(['/dashboard']);
+    this.redirectTo.navigate(['/dashboard/home']);
     this.loading.hide();
   }
 
