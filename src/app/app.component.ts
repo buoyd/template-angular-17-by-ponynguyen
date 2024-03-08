@@ -1,7 +1,6 @@
-import { Component, inject } from '@angular/core';
 import { CommonModule, NgIf } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { LoadingComponent } from './common/components/loading/loading.component';
 import { LoadingService } from './common/services/loading.service';
 
@@ -39,17 +38,12 @@ import { LoadingService } from './common/services/loading.service';
   </main> `,
 })
 export class AppComponent {
-  http = inject(HttpClient);
   loading = inject(LoadingService);
 
   mode = true;
 
   constructor() {
     this.mode = localStorage.getItem('mode')?.includes('dark') ? true : false;
-
-    // this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((res) => {
-    //   console.log(res);
-    // });
   }
 
   onToggleMode() {
